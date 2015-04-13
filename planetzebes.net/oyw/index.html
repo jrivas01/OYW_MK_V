@@ -1,0 +1,281 @@
+<html>
+<head>
+<link rel="shortcut icon" href="images/icon2.ico" type="image/x-icon">
+<title>Ever wanted to see a Zaku somersault over a pillbox? You've come to the right place!</title>
+</head>
+<style type="text/css"><!-- 
+a:link, a:visited, a:active {text-decoration: none} 
+--></style>
+
+<style type="text/css">
+<!--
+TD{font-family: times new roman; font-size: 10.5pt;}
+--->
+</style>
+
+<script type="text/javascript">
+<!--
+window.onload=show;
+function show(id) {
+var d = document.getElementById(id);
+	for (var i = 1; i<=10; i++) {
+		if (document.getElementById('smenu'+i)) {document.getElementById('smenu'+i).style.display='none';}
+	}
+if (d) {d.style.display='block';}
+}
+//-->
+</script>
+
+<script type="text/javascript">
+
+/*Load iframe from Query script
+*As first seen in http://www.dynamicdrive.com/forums
+*This notice must remain for legal use */
+
+function loadframe(){
+if(window.location.replace)
+window.frames.iframe.location.replace(get('framepage'));
+else
+window.frames.iframe.location.href=get('framepage');
+}
+function get(key_str) {
+var query = window.location.search.substr(1);
+var pairs = query.split("&");
+for(var i = 0; i < pairs.length; i++) {
+var pair = pairs[i].split("=");
+if(unescape(pair[0]) == key_str)
+return unescape(pair[1]);
+}
+return null;
+}
+if (location.search&&get('framepage')!=null)
+if ( typeof window.addEventListener != "undefined" )
+window.addEventListener( "load", loadframe, false );
+else if ( typeof window.attachEvent != "undefined" )
+window.attachEvent( "onload", loadframe );
+else {
+if ( window.onload != null ) {
+var oldOnload = window.onload;
+window.onload = function ( e ) {
+oldOnload( e );
+loadframe();
+};
+}
+else
+window.onload = loadframe;
+}
+</script>
+
+<style type="text/css" media="screen">
+<!-- 
+body {
+margin: 0;
+padding: 0;
+background: black;
+font: 100% times new roman;
+color: #fff;
+link: #fff;
+alink: #fff;
+vlink: #fff;
+}
+dl, dt, dd, ul, li {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+#menu {
+position: 
+top: 0;
+left: 0;
+}
+#menu {
+width: 7em;
+}
+#menu dt {
+cursor: pointer;
+margin: 2px 0;;
+height: 16px;
+line-height: 20px;
+text-align: center;
+font-weight: bold;
+border: 1px black;
+background: #000;
+}
+#menu dd {
+border: 1px black;
+}
+#menu li {
+text-align: center;
+background: #000;
+}
+#menu li a, #menu dt a {
+color: #fff;
+text-decoration: none;
+display: block;
+border: 0 none;
+height: 100%;
+}
+#menu li a:hover, #menu dt a:hover {
+background: #000;
+}
+-->
+</style>
+
+</head>
+
+<body bgcolor="#000000" text="#ffffff">
+
+<center><img src="images/blackdot.jpg" height=10></center>
+
+<table bgcolor="#ffffff" height="95%" align=center valign=middle border=0 cellspacing=3 cellpadding=0 width=800>
+<tr bgcolor="#000000">
+<td height=45 colspan=2 align=center>
+<b><font size=6 color="#3300FF">~</font> <font size=6 color="#ffffff">Mobile Suit Gundam: One Year War - MK V</font> <font size=6 color="#3300FF">~</font></b></td>
+</tr>
+<tr bgcolor="#000000">
+<td height=21 width=97 align=center valign=middle><font size=2 color="#3300FF"><b>RPG</b></font></td>
+
+<td height=100% width=760 rowspan=8 align=center valign=middle><iframe src="main.html" name="iframe" height=100% width=760 frameborder=0 marginwidth=0 marginheight=0></iframe></td>
+
+<tr bgcolor="#000000">
+<td height=100 align=center valign=top>
+
+<dl id="menu">
+<dt onclick="javascript:show();"><a href="main.html" target="iframe">Main</a></dt>
+	<dt onclick="javascript:show('smenu2');">Rulebook</dt>
+
+<dd id="smenu2">
+<ul>
+		<li><a href="rules.html" target="iframe"><font color="#cccccc">Rules</font></a></li>
+
+		<li><a href="roguerules.html" target="iframe"><font color="#cccccc">Rogue Rules</font></a></li>
+
+		<li><a href="joining.html" target="iframe"><font color="#cccccc">Joining</font></a></li>
+	</ul>
+</dd>
+	<dt onclick="javascript:show('smenu3');">Roster</dt>
+
+	<dd id="smenu3">
+	<ul>
+
+		<li><a href="fedroster.html" target="iframe"><font color="#cccccc">EF Roster</font></a></li>
+		<li><a href="zeonroster.html" target="iframe"><font color="#cccccc">Zeon Roster</font></a></li>
+
+		<li><a href="rogueroster.html" target="iframe"><font color="#cccccc">Rogue Roster</font></a></li>
+	</ul>
+
+</dd>
+	<dt onclick="javascript:show('smenu4');">Shop</dt>
+	<dd id="smenu4">
+
+	<ul>
+		<li><a href="fedshop.html" target="iframe"><font color="#cccccc">EF Shop</font></a></li>
+		<li><a href="zeonshop.html" target="iframe"><font color="#cccccc">Zeon Shop</font></a></li>
+
+		<li><a href="rogueshop.html" target="iframe"><font color="#cccccc">Rogue Shop</font></a></li>
+
+	</ul>
+</dd>
+
+	<dt onclick="javascript:show();"><a href="map.html" target="iframe">Map</a></dt>
+
+	<dt onclick="javascript:show('smenu5');">Tactical</dt>
+	<dd id="smenu5">
+	<ul>
+
+		<li><a href="bases.html" target="iframe"><font color="#cccccc">Bases</font></a></li>
+
+		<li><a href="ships.html" target="iframe"><font color="#cccccc">Ships</font></a></li>
+		<li><a href="fleets.html" target="iframe"><font color="#cccccc">Fleets</font></a></li>
+
+	</ul>
+</dd>
+	<dt onclick="javascript:show('smenu6');">Battlefield</dt>
+	<dd id="smenu6">
+
+	<ul>
+
+		<li><a href="battles.html" target="iframe"><font color="#cccccc">Battles</font></a></li>
+		<li><a href="events.html" target="iframe"><font color="#cccccc">Events</font></a></li>
+
+		<li><a href="majorevents.html" target="iframe"><font color="#cccccc">Major Events</font></a></li></ul></dd>
+	<dt onclick="javascript:show('smenu7');">Information</dt>
+	<dd id="smenu7">
+
+	<ul>
+<li><a href="history.html" target="iframe"><font color="#cccccc">History</font></a></li>
+		<li><a href="governments.html" target="iframe"><font color="#cccccc">Governments</font></a></li>
+		<li><a href="technology.html" target="iframe"><font color="#cccccc">Technology</font></a></li></ul></dd>
+<dt onclick="javascript:show();"><a href="timeline.html" target="iframe">Timeline</a></dt>
+</ul>
+</dd>
+</dl>
+
+<spacer type=block height=4>
+
+</td>
+
+</tr>
+<tr bgcolor="#000000">
+<td height=21 align=center valign=middle><font size=2 color="#3300FF"><b>Website</b></font></td>
+</tr>
+<tr bgcolor="#000000">
+<td height=30 align=center valign=top>
+
+<dl id="menu">
+	<dt onclick="javascript:show();"><a href="http://oywrpg4.proboards59.com/index.cgi" target="new">Forum</a></dt>
+<dt onclick="javascript:show();"><a href="chat.html" target="iframe">Chat</a></dt>
+	<dt onclick="javascript:show();"><a href="links.html" target="iframe">Links</a></dt>
+
+</dl>
+
+<spacer type=block height=4>
+
+</td>
+
+</tr>
+<tr bgcolor="#000000">
+<td height=21 align=center valign=middle><font size=2 color="#3300FF"><b>Staff</b></font></td>
+</tr>
+<tr bgcolor="#000000">
+<td height=100% align=center valign=top>
+<table border=0 cellpadding=2 cellspacing=0><tr><td></td></tr></table>
+<font size=2>
+<b>-Webmaster-</b><br>
+<a href="mailto:oywrpg4@gmail.com" style="color: #ffffff">Ketara</a>
+<p>
+<b>-Battle Writers-</b>
+<table border=0 cellpadding=0 cellspacing=0 align=center width=100%><tr>
+<td align=center valign=top width=50%><font size=2>
+<a href="mailto:ektrekker@gmail.com" style="color: #ffffff">Chan</a>
+<br><a href="mailto:Graphikchaos@yahoo.com " style="color: #ffffff">Chris</a>
+<br><a href="mailto:akunzepp@gmail.com" style="color: #ffffff">Zepp</a>
+</font></td>
+<td align=center valign=top width=50%><font size=2>
+<a href="mailto:BlueThunderMWZ@yahoo.com" style="color: #ffffff">Strikey</a>
+<br><a href="mailto:JBarno@gmail.com " style="color: #ffffff">Threid</a><br><a href="mailto:Psychodude100@hotmail.com" style="color: #ffffff">Zero-0</a>
+</font></td></tr></table>
+<p>
+<b>-Forum Mods-</b>
+<table border=0 cellpadding=0 cellspacing=0 align=center width=100%><tr>
+<td align=center valign=top width=50%><font size=2>
+<a href="mailto:scarletking@gmail.com" style="color: #ffffff">Gray</a>
+</font></td>
+<td align=center valign=top width=50%><font size=2>
+<a href="mailto:sekiha.tenkyoken@gmail.com" style="color: #ffffff">Aleksei</a>
+</font></td></tr></table>
+<p>
+<b>-Website-</b>
+<br>Cid
+</font>
+<br>
+</b></td>
+</tr>
+<tr bgcolor="#000000">
+<td height=25 align=center valign=top><img src="images/zeonghead.jpg" height=29 width=97></td>
+</tr>
+
+</table>
+
+</body>
+</html>
